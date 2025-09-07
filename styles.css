@@ -1,35 +1,44 @@
-body {
+    body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f9f9f9;
+      background-color: #f0f4f8; /* light gray-blue */
       color: #333;
     }
     header {
-      background: #222;
-      color: #fff;
-      padding: 1.5em 0;
-      text-align: center;
+      text-align: center;   /* centers header content */
+      background-color: #2c3e50; /* dark blue */
+      color: white;
+      padding: 2em;
     }
     header a {
-      color: #1da1f2;
+      color: #1abc9c; /* teal accent */
       text-decoration: none;
-      font-weight: bold;
     }
     section {
-      padding: 2em;
-      margin: 1em auto;
-      max-width: 800px;
-      background: #fff;
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 1.5em;
+      background: white;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
     h2 {
       border-bottom: 2px solid #ddd;
       padding-bottom: 0.5em;
     }
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
+    /* Projects grid */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
+    }
+    .project {
+      background: #ecf0f1; /* light card background */
+      padding: 1em;
+      border-radius: 6px;
+      text-align: center;
+    }
+    .project img {
+      max-width: 100%;
+      border-radius: 4px;
+      margin-bottom: 0.5em;
     }
